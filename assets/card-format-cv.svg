@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 155" width="100%" height="100%">
+  <!-- Surface Background & Border -->
+  <rect width="378" height="153" x="1" y="1" rx="6" ry="6" fill="#161B22" stroke="#30363D" stroke-width="1" />
+
+  <!-- Repo Icon & Title -->
+  <g transform="translate(18, 16)">
+    <!-- GitHub Book/Repo Icon -->
+    <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 0 0 1.5h2.5a2.25 2.25 0 0 0 2.25-2.25V.75A.75.75 0 0 0 14.75 0H4.5a4 4 0 0 0-4 4v10.5A2.5 2.5 0 0 0 3 17h9.75a.75.75 0 0 0 0-1.5H3a1 1 0 0 1-1-1V2.5z" fill="#8B949E" />
+    <text x="22" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#58A6FF">Format-CV</text>
+
+    <!-- Badge -->
+    <rect x="290" y="-1" width="52" height="18" rx="9" fill="#21262D" stroke="#30363D" stroke-width="1" />
+    <text x="316" y="11.5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#8B949E">Public</text>
+  </g>
+
+  <!-- Description -->
+  <text x="20" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#8B949E">Automated professional CV formatting, typography</text>
+  <text x="20" y="73" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#8B949E">standardization, and profile compilation pipeline.</text>
+
+  <!-- Topic Badges -->
+  <g transform="translate(20, 89)">
+    <rect x="0" y="0" width="82" height="20" rx="10" fill="#21262D" stroke="#30363D" stroke-width="1" />
+    <text x="41" y="13.5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#58A6FF">automation</text>
+
+    <rect x="88" y="0" width="62" height="20" rx="10" fill="#21262D" stroke="#30363D" stroke-width="1" />
+    <text x="119" y="13.5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#58A6FF">tooling</text>
+  </g>
+
+  <!-- Footer Metadata -->
+  <g transform="translate(20, 133)">
+    <!-- Language Circle & Name -->
+    <circle cx="5" cy="-4" r="5" fill="#8B949E" />
+    <text x="16" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#8B949E">Workflow</text>
+
+    <!-- Last Updated Date -->
+    <text x="340" y="0" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#8B949E">Updated Oct 13, 2026</text>
+  </g>
+</svg>

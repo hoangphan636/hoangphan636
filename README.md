@@ -1,12 +1,12 @@
 <div align="center">
 
-<!-- Top Banner -->
-[![Banner](./assets/banner.svg)](https://github.com/hoangphan636)
+<!-- Minimalist Engineering Banner -->
+[![Hoang Phan Banner](./assets/banner.svg)](https://github.com/hoangphan636)
 
 <br/>
 
-<!-- Realtime Typing Tagline -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=17&duration=2400&pause=1000&color=00F2FE&center=true&vCenter=true&width=750&lines=Senior+QA+Automation+Engineer+%26+Principal+Quality+Architect;Playwright+%2B+TypeScript+Enterprise+Test+Frameworks;Cross-Platform+Mobile+Automation+with+Appium+2.x;High-Concurrency+Performance+Engineering+(k6+%2F+Artillery);Deterministic+CI%2FCD+Quality+Gates+%26+Matrix+Sharding;Smart+Contract+%26+Web3+Quality+Assurance)](https://git.io/typing-svg)
+<!-- Clean Typing Tagline -->
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=16&duration=2600&pause=1000&color=58A6FF&center=true&vCenter=true&width=780&lines=Senior+QA+Automation+Engineer+%26+Principal+Quality+Architect;Playwright+%2B+TypeScript+Enterprise+Test+Frameworks;Mobile+Automation+Architecture+with+Appium+2.x;High-Concurrency+Performance+Engineering+(k6);Deterministic+CI%2FCD+Quality+Gates+%26+Matrix+Sharding)](https://git.io/typing-svg)
 
 </div>
 
@@ -16,37 +16,34 @@
 
 <table>
   <tr>
-    <td width="60%" valign="top">
+    <td width="58%" valign="top">
 
-```javascript
-const hoangPhan = {
-  role: "Senior QA Automation Engineer • Principal Test Architect",
-  location: "Ho Chi Minh City, Vietnam 🇻🇳",
-  building: [
-    "Autonomous Playwright & Appium Frameworks",
-    "Realtime 2s Scheduler Quality Telemetry",
-    "AI-Assisted Self-Healing Locator Engines",
-    "High-Concurrency Performance Gates with k6"
-  ],
-  stack: {
-    web_e2e: ["Playwright", "TypeScript", "Cypress", "Selenium"],
-    mobile: ["Appium 2.x", "UIAutomator2", "XCUITest"],
-    backend: ["Java", "JUnit 5", "Cucumber BDD", "TestNG"],
-    performance: ["k6", "Artillery", "Apache JMeter"],
-    devops: ["GitHub Actions", "GitLab CI", "Docker"],
-    web3: ["Hardhat", "Foundry", "Ethers.js"]
-  },
-  availability: "Open for Senior / Lead / Principal QA roles"
-};
+```typescript
+interface StaffQualityArchitect {
+  name: "Hoang Phan";
+  role: "Senior QA Automation Engineer • Principal Test Architect";
+  location: "Ho Chi Minh City, Vietnam 🇻🇳";
+  specialties: [
+    "Enterprise E2E Test Automation (Playwright, Appium)",
+    "High-Concurrency Performance Engineering (k6, JMeter)",
+    "AI-Assisted Test Automation & Self-Healing Locators",
+    "Deterministic CI/CD Pipelines & Quality Gates"
+  ];
+  currentFocus: [
+    "Model Context Protocol (MCP) Test Servers",
+    "Cross-Platform Native & Mobile Test Infrastructure"
+  ];
+  availability: "Available for Senior / Lead / Principal QA roles";
+}
 ```
 
 > *"Program testing can be used to show the presence of bugs, but never to show their absence!"*  
 > — **Edsger W. Dijkstra**
 
 </td>
-<td width="40%" align="center" valign="middle">
+<td width="42%" align="center" valign="middle">
 
-<img src="./assets/about-lofi.jpg" alt="Hoang Phan - 3D Cyber QA Workstation" width="100%" style="border-radius: 14px; box-shadow: 0 8px 25px rgba(0,242,254,0.25);" />
+<img src="./assets/about-lofi.jpg" alt="Hoang Phan - QA Engineering Lab" width="100%" style="border-radius: 8px; border: 1px solid #30363D;" />
 
 </td>
 </tr>
@@ -57,92 +54,130 @@ const hoangPhan = {
 ### 🌐 Connect With Me
 
 <p align="center">
-  <a href="https://linkedin.com/in/"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="https://github.com/hoangphan636"><img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <a href="mailto:hoangphannhat10@gmail.com"><img src="https://img.shields.io/badge/GMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://t.me/"><img src="https://img.shields.io/badge/TELEGRAM-229ED9?style=for-the-badge&logo=telegram&logoColor=white" /></a>
+  <a href="https://linkedin.com/in/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
+  &nbsp;
+  <a href="https://github.com/hoangphan636"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" /></a>
+  &nbsp;
+  <a href="mailto:hoangphannhat10@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" /></a>
+  &nbsp;
+  <a href="https://t.me/"><img src="https://img.shields.io/badge/Telegram-24A1DE?style=flat-square&logo=telegram&logoColor=white" /></a>
 </p>
 
 ---
 
-### 🛠 Tech Stack
+### 🛠 Technical Competencies
+
+<table>
+  <tr>
+    <td width="24%"><b>E2E &amp; Mobile QA</b></td>
+    <td>Playwright • Appium 2.x • Cypress • Selenium • UIAutomator2 • XCUITest</td>
+  </tr>
+  <tr>
+    <td width="24%"><b>Languages &amp; Runtimes</b></td>
+    <td>TypeScript • JavaScript (Node.js) • Java (JUnit 5, TestNG) • Python</td>
+  </tr>
+  <tr>
+    <td width="24%"><b>BDD &amp; API Testing</b></td>
+    <td>Cucumber (Gherkin) • REST Assured • Postman • OpenAPI / Swagger</td>
+  </tr>
+  <tr>
+    <td width="24%"><b>Performance &amp; Observability</b></td>
+    <td>k6 Load Testing • Artillery • Apache JMeter • Grafana • InfluxDB</td>
+  </tr>
+  <tr>
+    <td width="24%"><b>CI/CD &amp; Infrastructure</b></td>
+    <td>GitHub Actions • GitLab CI • Azure DevOps • Docker • Linux (Bash)</td>
+  </tr>
+  <tr>
+    <td width="24%"><b>AI &amp; Web3 Quality</b></td>
+    <td>Autonomous QA Agents • Self-Healing Locators • Hardhat • Ethers.js</td>
+  </tr>
+</table>
+
+<br/>
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=ts,js,java,py,playwright,docker,githubactions,gitlab,postman,grafana,linux,git,vscode&theme=dark" alt="Tech Stack Icons" />
+</div>
+
+---
+
+### 📦 Featured Engineering Repositories
+*Core open-source architectures, test automation frameworks, and MCP tooling.*
+
+<table>
+  <tr>
+    <td width="33.3%" valign="top">
+      <a href="https://github.com/hoangphan636/playwright-agent-mcp">
+        <img src="./assets/card-playwright-mcp.svg" alt="playwright-agent-mcp" width="100%" />
+      </a>
+    </td>
+    <td width="33.3%" valign="top">
+      <a href="https://github.com/hoangphan636/Extension-QA">
+        <img src="./assets/card-extension-qa.svg" alt="Extension-QA" width="100%" />
+      </a>
+    </td>
+    <td width="33.3%" valign="top">
+      <a href="https://github.com/hoangphan636/Mobile-mcp">
+        <img src="./assets/card-mobile-mcp.svg" alt="Mobile-mcp" width="100%" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+---
+
+### 🔄 Recently Updated Repositories
+*Latest active commits, codebases, and tool integrations.*
+
+<table>
+  <tr>
+    <td width="33.3%" valign="top">
+      <a href="https://github.com/hoangphan636/Rule-Agent">
+        <img src="./assets/card-rule-agent.svg" alt="Rule-Agent" width="100%" />
+      </a>
+    </td>
+    <td width="33.3%" valign="top">
+      <a href="https://github.com/hoangphan636/playwright-agent-mcp">
+        <img src="./assets/card-playwright-mcp.svg" alt="playwright-agent-mcp" width="100%" />
+      </a>
+    </td>
+    <td width="33.3%" valign="top">
+      <a href="https://github.com/hoangphan636/Format-CV">
+        <img src="./assets/card-format-cv.svg" alt="Format-CV" width="100%" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+---
+
+### 📈 GitHub Analytics
 
 <div align="center">
 
-<!-- Modern 3D Icons Grid -->
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=ts,js,java,py,playwright,docker,githubactions,gitlab,postman,grafana,linux,git,vscode&theme=dark" />
-</a>
+<!-- Streak Stats -->
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=hoangphan636&theme=dark&background=161b22&border=30363d&stroke=30363d&ring=58a6ff&fire=58a6ff&currStreakNum=f0f6fc&sideNums=8b949e&sideLabels=8b949e&dates=8b949e" alt="GitHub Streak" width="98%" />
 
 <br/><br/>
 
-<!-- Modern Colored Pill Badges -->
-<p align="center">
-  <img src="https://img.shields.io/badge/Playwright-00f2fe?style=flat-square&logo=playwright&logoColor=black" />
-  <img src="https://img.shields.io/badge/Appium_2.x-662D91?style=flat-square&logo=appium&logoColor=white" />
-  <img src="https://img.shields.io/badge/JUnit_5-25A162?style=flat-square&logo=junit5&logoColor=white" />
-  <img src="https://img.shields.io/badge/Cucumber_BDD-23D96C?style=flat-square&logo=cucumber&logoColor=white" />
-  <img src="https://img.shields.io/badge/k6_Performance-7D4EFA?style=flat-square&logo=k6&logoColor=white" />
-  <img src="https://img.shields.io/badge/Artillery-ff0844?style=flat-square&logo=artillery&logoColor=white" />
-  <img src="https://img.shields.io/badge/Testcontainers-00f5a0?style=flat-square&logo=docker&logoColor=black" />
-  <img src="https://img.shields.io/badge/Hardhat_Web3-eab308?style=flat-square&logo=ethereum&logoColor=black" />
-  <img src="https://img.shields.io/badge/Ethers.js-38bdf8?style=flat-square&logo=ethereum&logoColor=black" />
-</p>
-
-</div>
-
----
-
-### 🔥 LOẠI 1: TOP 3 REPO TRUY CẬP NHIỀU NHẤT
-> *Tần suất truy cập & hoạt động cao nhất • Tự động kích hoạt & chuyển đổi card mỗi 2 giây*
-
-<div align="center">
-
-[![Top Accessed Repos](./assets/top-accessed-repos.svg)](https://github.com/hoangphan636?tab=repositories)
-
-</div>
-
----
-
-### ⚡ LOẠI 2: TOP 3 REPO MỚI NHẤT
-> *Codebase mới nhất & commits gần đây • Cập nhật thông số realtime chu kỳ 2 giây*
-
-<div align="center">
-
-[![Top Newest Repos](./assets/top-latest-repos.svg)](https://github.com/hoangphan636?tab=repositories)
-
-</div>
-
----
-
-### 📊 GitHub Analytics
-
-<div align="center">
-
-<!-- Streak Stats with Circular Progress Ring -->
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=hoangphan636&theme=tokyonight&hide_border=true&background=080b11&ring=00f2fe&fire=ff0844&currStreakNum=00f5a0" alt="GitHub Streak" width="98%" />
-
-<br/>
-
 <!-- Stats & Top Languages -->
-<img src="https://github-readme-stats.vercel.app/api?username=hoangphan636&show_icons=true&theme=tokyonight&hide_border=true&bg_color=080b11&title_color=00f2fe&icon_color=ff0844&text_color=94a3b8" alt="GitHub Stats" width="48%" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hoangphan636&layout=compact&theme=tokyonight&hide_border=true&bg_color=080b11&title_color=00f2fe&text_color=94a3b8" alt="Top Languages" width="48%" />
+<img src="https://github-readme-stats.vercel.app/api?username=hoangphan636&show_icons=true&bg_color=161b22&border_color=30363d&title_color=58a6ff&text_color=8b949e&icon_color=58a6ff" alt="GitHub Stats" width="48%" />
+&nbsp;
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hoangphan636&layout=compact&bg_color=161b22&border_color=30363d&title_color=58a6ff&text_color=8b949e" alt="Top Languages" width="48%" />
 
-<br/>
+<br/><br/>
 
-<!-- Random Dev Quote -->
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev Quote" width="98%" />
+<!-- Dev Quote -->
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=github_dark" alt="Dev Quote" width="98%" />
 
 </div>
 
 ---
 
-### ⏱ REALTIME 2-SECOND SCHEDULER DAEMON
+### ⚙️ Repository Synchronization Utility
 
-> [!NOTE]
-> **Cơ chế cập nhật 2 giây**:
-> - **Visual Animation (Frontend)**: Cả 2 thẻ SVG sử dụng CSS `@keyframes` với thanh tiến trình và radar quét chu kỳ **2.0s**. Mỗi card và thông số (P95 latency, Pass rate, Locators, Health) tự động highlight xoay tua mỗi 2 giây.
-> - **Live Data Sync (Local/Backend)**: Chạy script native PowerShell để thăm dò và đồng bộ dữ liệu GitHub API mỗi 2 giây:
->   ```powershell
->   .\scripts\update_repos.ps1 -LoopSeconds 2
->   ```
+```powershell
+# Query repository state & verify recent updates via GitHub CLI
+.\scripts\update_repos.ps1
+```

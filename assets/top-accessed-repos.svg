@@ -1,233 +1,69 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 370" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#06090e" />
-      <stop offset="50%" stop-color="#0b111c" />
-      <stop offset="100%" stop-color="#040609" />
-    </linearGradient>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 240" width="100%" height="100%">
+  <!-- Container -->
+  <rect width="938" height="238" x="1" y="1" rx="8" ry="8" fill="#161B22" stroke="#30363D" stroke-width="1" />
 
-    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#141c2b" stop-opacity="0.95" />
-      <stop offset="100%" stop-color="#0a101a" stop-opacity="0.95" />
-    </linearGradient>
+  <!-- Section Header -->
+  <g transform="translate(24, 28)">
+    <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 0 0 1.5h2.5a2.25 2.25 0 0 0 2.25-2.25V.75A.75.75 0 0 0 14.75 0H4.5a4 4 0 0 0-4 4v10.5A2.5 2.5 0 0 0 3 17h9.75a.75.75 0 0 0 0-1.5H3a1 1 0 0 1-1-1V2.5z" fill="#58A6FF" />
+    <text x="24" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#F0F6FC">Featured Engineering Repositories</text>
+    <text x="325" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#8B949E">• Core test automation &amp; protocol tooling</text>
 
-    <linearGradient id="cyanNeon" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f2fe" />
-      <stop offset="100%" stop-color="#4facfe" />
-    </linearGradient>
-
-    <linearGradient id="purpleNeon" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#b224ef" />
-      <stop offset="100%" stop-color="#7579ff" />
-    </linearGradient>
-
-    <linearGradient id="emeraldNeon" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f5a0" />
-      <stop offset="100%" stop-color="#00d9f5" />
-    </linearGradient>
-
-    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#000000" flood-opacity="0.8" />
-    </filter>
-  </defs>
-
-  <style>
-    .header-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 19px; font-weight: 800; fill: #ffffff; letter-spacing: 0.5px; }
-    .header-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; font-weight: 600; fill: #00f2fe; }
-    .card-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 16px; font-weight: 700; fill: #ffffff; }
-    .card-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11.5px; font-weight: 400; fill: #94a3b8; }
-    .card-tag { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 10.5px; font-weight: 700; }
-    .param-label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 10px; font-weight: 600; fill: #64748b; }
-    .param-val { font-family: 'SF Mono', Consolas, Monaco, monospace; font-size: 11px; font-weight: 700; }
-
-    /* 2-Second Scheduler Cycle (Total 6s: 3 cards x 2s each) */
-    @keyframes cycleCard1 {
-      0%, 33.33% { transform: translateY(-10px) scale(1.025); filter: drop-shadow(0 0 20px rgba(0, 242, 254, 0.55)); stroke: #00f2fe; stroke-width: 2.2px; }
-      33.34%, 100% { transform: translateY(0px) scale(1); filter: none; stroke: #1e293b; stroke-width: 1px; }
-    }
-
-    @keyframes cycleCard2 {
-      0%, 33.33% { transform: translateY(0px) scale(1); filter: none; stroke: #1e293b; stroke-width: 1px; }
-      33.34%, 66.66% { transform: translateY(-10px) scale(1.025); filter: drop-shadow(0 0 20px rgba(178, 36, 239, 0.55)); stroke: #b224ef; stroke-width: 2.2px; }
-      66.67%, 100% { transform: translateY(0px) scale(1); filter: none; stroke: #1e293b; stroke-width: 1px; }
-    }
-
-    @keyframes cycleCard3 {
-      0%, 66.66% { transform: translateY(0px) scale(1); filter: none; stroke: #1e293b; stroke-width: 1px; }
-      66.67%, 100% { transform: translateY(-10px) scale(1.025); filter: drop-shadow(0 0 20px rgba(0, 245, 160, 0.55)); stroke: #00f5a0; stroke-width: 2.2px; }
-    }
-
-    /* 2-Second Progress Bar */
-    @keyframes timerProgress {
-      0% { width: 0px; }
-      96% { width: 140px; }
-      100% { width: 140px; }
-    }
-
-    /* Radar Beacon Pulse */
-    @keyframes pulseLive {
-      0% { opacity: 0.3; transform: scale(0.85); }
-      50% { opacity: 1; transform: scale(1.15); }
-      100% { opacity: 0.3; transform: scale(0.85); }
-    }
-
-    /* Realtime Value Ticker animation */
-    @keyframes tickerFade {
-      0%, 100% { opacity: 0.9; }
-      50% { opacity: 1; }
-    }
-
-    .card-1 { animation: cycleCard1 6s infinite ease-in-out; transform-origin: 165px 205px; }
-    .card-2 { animation: cycleCard2 6s infinite ease-in-out; transform-origin: 470px 205px; }
-    .card-3 { animation: cycleCard3 6s infinite ease-in-out; transform-origin: 775px 205px; }
-    .timer-bar { animation: timerProgress 2s infinite linear; }
-    .live-dot { animation: pulseLive 2s infinite ease-in-out; transform-origin: 16px 15px; }
-    .val-active { animation: tickerFade 2s infinite ease-in-out; }
-  </style>
-
-  <!-- Container Box -->
-  <rect x="2" y="2" width="936" height="366" rx="20" fill="url(#bgGrad1)" stroke="#1e293b" stroke-width="1.5" />
-
-  <!-- Top Header Bar -->
-  <g transform="translate(30, 24)">
-    <rect x="0" y="0" width="36" height="36" rx="10" fill="#0f172a" stroke="#00f2fe" stroke-width="1.5" />
-    <path d="M18 7 L28 12 L28 24 L18 29 L8 24 L8 12 Z" fill="none" stroke="#00f2fe" stroke-width="2" />
-    <circle cx="18" cy="18" r="4" fill="#00f2fe" />
-
-    <text x="48" y="19" class="header-title">🔥 LOẠI 1: TOP 3 REPO TRUY CẬP NHIỀU NHẤT</text>
-    <text x="48" y="34" class="header-sub">HIGHEST FREQUENCY &amp; MOST VISITED REPOSITORIES • REALTIME 2S SCHEDULER</text>
-
-    <!-- 2s Scheduler Realtime Indicator -->
-    <g transform="translate(680, 2)">
-      <rect x="0" y="0" width="195" height="32" rx="16" fill="#08101a" stroke="#00f2fe" stroke-width="1" />
-      <circle cx="16" cy="16" r="5" fill="#00f5a0" class="live-dot" />
-      <text x="28" y="20" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="800" fill="#00f5a0">SCHEDULER: 2S TICKER</text>
-      <!-- Progress Bar inside indicator -->
-      <rect x="20" y="25" width="140" height="2" rx="1" fill="#1e293b" />
-      <rect x="20" y="25" width="0" height="2" rx="1" fill="#00f2fe" class="timer-bar" />
-    </g>
+    <!-- Pill -->
+    <rect x="815" y="-3" width="75" height="20" rx="10" fill="#21262D" stroke="#30363D" stroke-width="1" />
+    <text x="852" y="11" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#8B949E">3 Projects</text>
   </g>
 
-  <!-- ==================== CARD 1 ==================== -->
-  <g class="card-1">
-    <rect x="30" y="80" width="275" height="260" rx="16" fill="url(#cardGrad1)" stroke="#1e293b" stroke-width="1" filter="url(#cardShadow)" />
-    <path d="M 30 96 A 16 16 0 0 1 46 80 L 289 80 A 16 16 0 0 1 305 96 L 305 86 L 30 86 Z" fill="url(#cyanNeon)" />
-
-    <!-- Rank & Star -->
-    <rect x="46" y="96" width="32" height="20" rx="6" fill="#0f172a" stroke="#00f2fe" stroke-width="1" />
-    <text x="62" y="110" font-family="-apple-system, sans-serif" font-size="12" font-weight="900" fill="#00f2fe" text-anchor="middle">#1</text>
-    <g transform="translate(235, 96)">
-      <path d="M8 0L10.5 5.5L16 6.3L12 10.2L13 16L8 13.2L3 16L4 10.2L0 6.3L5.5 5.5Z" fill="#eab308" />
-      <text x="20" y="13" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#e2e8f0">1★</text>
-    </g>
-
-    <!-- Title & Desc -->
-    <text x="46" y="142" class="card-title">playwright-agent-mcp</text>
-    <text x="46" y="164" class="card-desc">Autonomous Playwright MCP server agent</text>
-    <text x="46" y="180" class="card-desc">for intelligent QA &amp; locator self-healing.</text>
-
-    <!-- Tags -->
-    <g transform="translate(46, 196)">
-      <rect x="0" y="0" width="78" height="20" rx="5" fill="#13273e" stroke="#00f2fe" stroke-width="0.8" />
-      <text x="39" y="14" fill="#00f2fe" class="card-tag" text-anchor="middle">Playwright</text>
-
-      <rect x="86" y="0" width="76" height="20" rx="5" fill="#1e183a" stroke="#a855f7" stroke-width="0.8" />
-      <text x="124" y="14" fill="#c084fc" class="card-tag" text-anchor="middle">TypeScript</text>
-    </g>
-
-    <!-- Realtime Metric Tickers (2s Live Parameters) -->
-    <rect x="46" y="230" width="243" height="58" rx="8" fill="#090f18" stroke="#1e293b" stroke-width="0.8" />
-    <text x="56" y="247" class="param-label">P95 LATENCY</text>
-    <text x="56" y="264" class="param-val val-active" fill="#00f2fe">142ms [OPTIMAL]</text>
-    <text x="165" y="247" class="param-label">PASS RATE</text>
-    <text x="165" y="264" class="param-val val-active" fill="#00f5a0">99.8% [PASS]</text>
-    <text x="56" y="278" font-family="-apple-system, sans-serif" font-size="9" font-weight="600" fill="#475569">SYNC: TICK 2S • WORKERS: 6 PARALLEL</text>
-
+  <!-- Card 1: playwright-agent-mcp -->
+  <g transform="translate(24, 58)">
+    <rect width="284" height="156" rx="6" ry="6" fill="#0D1117" stroke="#30363D" stroke-width="1" />
+    <!-- Title -->
+    <text x="16" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#58A6FF">playwright-agent-mcp</text>
+    <!-- Description -->
+    <text x="16" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8B949E">Autonomous Playwright MCP server</text>
+    <text x="16" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8B949E">agent for browser QA testing &amp; healing.</text>
+    <!-- Tag -->
+    <rect x="16" y="88" width="44" height="18" rx="9" fill="#21262D" stroke="#30363D" stroke-width="1" />
+    <text x="38" y="101" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#58A6FF">mcp</text>
     <!-- Footer -->
-    <line x1="46" y1="300" x2="289" y2="300" stroke="#1e293b" stroke-width="1" />
-    <text x="46" y="322" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#00f2fe">ACTIVITY: REALTIME HIGH</text>
-    <circle cx="275" cy="318" r="4" fill="#00f2fe" />
+    <circle cx="21" cy="134" r="4.5" fill="#3178C6" />
+    <text x="32" y="137.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8B949E">TypeScript</text>
+    <!-- Star -->
+    <path d="M102 128a.5.5 0 0 1 .448.278l1.254 2.544 2.807.408a.5.5 0 0 1 .277.853l-2.031 1.98.479 2.795a.5.5 0 0 1-.725.527L102 136.065l-2.51 1.32a.5.5 0 0 1-.725-.527l.48-2.796-2.032-1.98a.5.5 0 0 1 .277-.853l2.807-.408 1.255-2.544a.5.5 0 0 1 .448-.278z" fill="#8B949E" />
+    <text x="114" y="137.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8B949E">1</text>
+    <text x="268" y="137.5" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#8B949E">Oct 17, 2026</text>
   </g>
 
-  <!-- ==================== CARD 2 ==================== -->
-  <g class="card-2">
-    <rect x="335" y="80" width="275" height="260" rx="16" fill="url(#cardGrad1)" stroke="#1e293b" stroke-width="1" filter="url(#cardShadow)" />
-    <path d="M 335 96 A 16 16 0 0 1 351 80 L 594 80 A 16 16 0 0 1 610 96 L 610 86 L 335 86 Z" fill="url(#purpleNeon)" />
-
-    <!-- Rank & Star -->
-    <rect x="351" y="96" width="32" height="20" rx="6" fill="#0f172a" stroke="#b224ef" stroke-width="1" />
-    <text x="367" y="110" font-family="-apple-system, sans-serif" font-size="12" font-weight="900" fill="#b224ef" text-anchor="middle">#2</text>
-    <g transform="translate(540, 96)">
-      <path d="M8 0L10.5 5.5L16 6.3L12 10.2L13 16L8 13.2L3 16L4 10.2L0 6.3L5.5 5.5Z" fill="#eab308" />
-      <text x="20" y="13" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#e2e8f0">1★</text>
-    </g>
-
-    <!-- Title & Desc -->
-    <text x="351" y="142" class="card-title">Extension-QA</text>
-    <text x="351" y="164" class="card-desc">Specialized browser inspector extension</text>
-    <text x="351" y="180" class="card-desc">for real-time locator &amp; DOM debugging.</text>
-
-    <!-- Tags -->
-    <g transform="translate(351, 196)">
-      <rect x="0" y="0" width="85" height="20" rx="5" fill="#24143a" stroke="#b224ef" stroke-width="0.8" />
-      <text x="42.5" y="14" fill="#d946ef" class="card-tag" text-anchor="middle">Browser Ext</text>
-
-      <rect x="93" y="0" width="75" height="20" rx="5" fill="#112739" stroke="#38bdf8" stroke-width="0.8" />
-      <text x="130.5" y="14" fill="#38bdf8" class="card-tag" text-anchor="middle">JavaScript</text>
-    </g>
-
-    <!-- Realtime Metric Tickers (2s Live Parameters) -->
-    <rect x="351" y="230" width="243" height="58" rx="8" fill="#090f18" stroke="#1e293b" stroke-width="0.8" />
-    <text x="361" y="247" class="param-label">ELEMENTS SCANNED</text>
-    <text x="361" y="264" class="param-val val-active" fill="#c084fc">3,892 LOCATORS</text>
-    <text x="480" y="247" class="param-label">STABILITY</text>
-    <text x="480" y="264" class="param-val val-active" fill="#00f5a0">100% SECURE</text>
-    <text x="361" y="278" font-family="-apple-system, sans-serif" font-size="9" font-weight="600" fill="#475569">SYNC: TICK 2S • CONTEXT: ISOLATED</text>
-
+  <!-- Card 2: Extension-QA -->
+  <g transform="translate(328, 58)">
+    <rect width="284" height="156" rx="6" ry="6" fill="#0D1117" stroke="#30363D" stroke-width="1" />
+    <!-- Title -->
+    <text x="16" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#58A6FF">Extension-QA</text>
+    <!-- Description -->
+    <text x="16" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8B949E">Browser DevTools inspector extension</text>
+    <text x="16" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8B949E">for live locator &amp; DOM debugging.</text>
+    <!-- Tag -->
+    <rect x="16" y="88" width="60" height="18" rx="9" fill="#21262D" stroke="#30363D" stroke-width="1" />
+    <text x="46" y="101" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#58A6FF">devtools</text>
     <!-- Footer -->
-    <line x1="351" y1="300" x2="594" y2="300" stroke="#1e293b" stroke-width="1" />
-    <text x="351" y="322" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#c084fc">FREQUENCY: DAILY ACTIVE</text>
-    <circle cx="580" cy="318" r="4" fill="#b224ef" />
+    <circle cx="21" cy="134" r="4.5" fill="#3178C6" />
+    <text x="32" y="137.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8B949E">TypeScript</text>
+    <text x="268" y="137.5" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#8B949E">Oct 13, 2026</text>
   </g>
 
-  <!-- ==================== CARD 3 ==================== -->
-  <g class="card-3">
-    <rect x="640" y="80" width="275" height="260" rx="16" fill="url(#cardGrad1)" stroke="#1e293b" stroke-width="1" filter="url(#cardShadow)" />
-    <path d="M 640 96 A 16 16 0 0 1 656 80 L 899 80 A 16 16 0 0 1 915 96 L 915 86 L 640 86 Z" fill="url(#emeraldNeon)" />
-
-    <!-- Rank & Star -->
-    <rect x="656" y="96" width="32" height="20" rx="6" fill="#0f172a" stroke="#00f5a0" stroke-width="1" />
-    <text x="672" y="110" font-family="-apple-system, sans-serif" font-size="12" font-weight="900" fill="#00f5a0" text-anchor="middle">#3</text>
-    <g transform="translate(845, 96)">
-      <path d="M8 0L10.5 5.5L16 6.3L12 10.2L13 16L8 13.2L3 16L4 10.2L0 6.3L5.5 5.5Z" fill="#eab308" />
-      <text x="20" y="13" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#e2e8f0">1★</text>
-    </g>
-
-    <!-- Title & Desc -->
-    <text x="656" y="142" class="card-title">Mobile-mcp</text>
-    <text x="656" y="164" class="card-desc">Mobile automation protocol controller</text>
-    <text x="656" y="180" class="card-desc">powered by Appium 2.x &amp; gesture tests.</text>
-
-    <!-- Tags -->
-    <g transform="translate(656, 196)">
-      <rect x="0" y="0" width="75" height="20" rx="5" fill="#0d2c25" stroke="#00f5a0" stroke-width="0.8" />
-      <text x="37.5" y="14" fill="#00f5a0" class="card-tag" text-anchor="middle">Appium</text>
-
-      <rect x="83" y="0" width="78" height="20" rx="5" fill="#1e183a" stroke="#a855f7" stroke-width="0.8" />
-      <text x="122" y="14" fill="#c084fc" class="card-tag" text-anchor="middle">Mobile QA</text>
-    </g>
-
-    <!-- Realtime Metric Tickers (2s Live Parameters) -->
-    <rect x="656" y="230" width="243" height="58" rx="8" fill="#090f18" stroke="#1e293b" stroke-width="0.8" />
-    <text x="666" y="247" class="param-label">CLOUD DEVICES</text>
-    <text x="666" y="264" class="param-val val-active" fill="#00f5a0">12 NODES</text>
-    <text x="770" y="247" class="param-label">PLATFORMS</text>
-    <text x="770" y="264" class="param-val val-active" fill="#38bdf8">iOS &amp; Android</text>
-    <text x="666" y="278" font-family="-apple-system, sans-serif" font-size="9" font-weight="600" fill="#475569">SYNC: TICK 2S • APPIUM 2.X PROTOCOL</text>
-
+  <!-- Card 3: Mobile-mcp -->
+  <g transform="translate(632, 58)">
+    <rect width="284" height="156" rx="6" ry="6" fill="#0D1117" stroke="#30363D" stroke-width="1" />
+    <!-- Title -->
+    <text x="16" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#58A6FF">Mobile-mcp</text>
+    <!-- Description -->
+    <text x="16" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8B949E">Mobile automation protocol bridge</text>
+    <text x="16" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8B949E">powered by Appium 2.x for device testing.</text>
+    <!-- Tag -->
+    <rect x="16" y="88" width="56" height="18" rx="9" fill="#21262D" stroke="#30363D" stroke-width="1" />
+    <text x="44" y="101" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#58A6FF">appium</text>
     <!-- Footer -->
-    <line x1="656" y1="300" x2="899" y2="300" stroke="#1e293b" stroke-width="1" />
-    <text x="656" y="322" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#00f5a0">PLATFORM: CROSS-DEVICE</text>
-    <circle cx="885" cy="318" r="4" fill="#00f5a0" />
+    <circle cx="21" cy="134" r="4.5" fill="#3178C6" />
+    <text x="32" y="137.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8B949E">TypeScript</text>
+    <text x="268" y="137.5" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#8B949E">Aug 31, 2026</text>
   </g>
 </svg>
