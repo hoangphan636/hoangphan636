@@ -1,22 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 150" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 155" width="100%" height="100%">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#161B22" />
+      <stop offset="50%" stop-color="#0E131A" />
       <stop offset="100%" stop-color="#0D1117" />
     </linearGradient>
-    <pattern id="dotGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+
+    <!-- 3D Shimmer Gradient -->
+    <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#30363D" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#58A6FF" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#30363D" stop-opacity="0.2" />
+    </linearGradient>
+
+    <!-- 3D Isometric Cube Gradients -->
+    <linearGradient id="cubeTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#1F6FEB" stop-opacity="0.6" />
+    </linearGradient>
+    <linearGradient id="cubeLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1F6FEB" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#111B27" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="cubeRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#388BFD" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#161B22" stop-opacity="0.9" />
+    </linearGradient>
+
+    <pattern id="dotGrid" width="22" height="22" patternUnits="userSpaceOnUse">
       <circle cx="2" cy="2" r="0.75" fill="#30363D" opacity="0.6" />
     </pattern>
   </defs>
 
-  <!-- Container -->
-  <rect width="878" height="148" x="1" y="1" rx="8" ry="8" fill="url(#bgGrad)" stroke="#30363D" stroke-width="1" />
-  <rect width="878" height="148" x="1" y="1" rx="8" ry="8" fill="url(#dotGrid)" />
+  <style>
+    @keyframes float3D {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-7px) rotate(1.5deg); }
+    }
+    @keyframes orbitPulse {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes radarPulse {
+      0% { r: 3.5; opacity: 1; }
+      70% { r: 9; opacity: 0; }
+      100% { r: 3.5; opacity: 0; }
+    }
+    @keyframes borderSweep {
+      0% { stroke-dashoffset: 400; }
+      100% { stroke-dashoffset: -400; }
+    }
+    @keyframes badgeHover {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-2px); }
+    }
+    .float-cube { animation: float3D 4.5s ease-in-out infinite; transform-origin: 805px 75px; }
+    .orbit-ring { animation: orbitPulse 12s linear infinite; transform-origin: 805px 75px; }
+    .pulse-dot { animation: radarPulse 2s cubic-bezier(0, 0.2, 0.8, 1) infinite; }
+    .tag-b1 { animation: badgeHover 3s ease-in-out infinite; }
+    .tag-b2 { animation: badgeHover 3s ease-in-out 0.4s infinite; }
+    .tag-b3 { animation: badgeHover 3s ease-in-out 0.8s infinite; }
+    .tag-b4 { animation: badgeHover 3s ease-in-out 1.2s infinite; }
+    .tag-b5 { animation: badgeHover 3s ease-in-out 1.6s infinite; }
+  </style>
 
-  <!-- Status Indicator -->
+  <!-- Container Surface -->
+  <rect width="878" height="153" x="1" y="1" rx="8" ry="8" fill="url(#bgGrad)" stroke="#30363D" stroke-width="1" />
+  <rect width="878" height="153" x="1" y="1" rx="8" ry="8" fill="url(#dotGrid)" />
+
+  <!-- Animated Top Border Shimmer Beam -->
+  <line x1="20" y1="1" x2="860" y2="1" stroke="url(#shimmer)" stroke-width="1.5" stroke-dasharray="120 280" style="animation: borderSweep 6s linear infinite;" />
+
+  <!-- Status Indicator with Radar Pulse -->
   <g transform="translate(32, 28)">
     <circle cx="4" cy="4" r="3.5" fill="#3FB950" />
-    <text x="14" y="7.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#8B949E" letter-spacing="0.8px">SYSTEMS QUALITY ARCHITECT &amp; AUTOMATION LEAD</text>
+    <circle cx="4" cy="4" r="3.5" fill="none" stroke="#3FB950" stroke-width="1.5" class="pulse-dot" />
+    <text x="16" y="7.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#8B949E" letter-spacing="0.8px">PRINCIPAL QUALITY ARCHITECT &amp; AUTOMATION LEAD</text>
   </g>
 
   <!-- Name -->
@@ -25,34 +84,44 @@
   <!-- Tagline / Professional Position -->
   <text x="32" y="98" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#8B949E">Architecting deterministic E2E test platforms, AI-guided selector validation, and high-concurrency load pipelines.</text>
 
-  <!-- Competency Tags -->
+  <!-- 3D Floating Competency Tags -->
   <g transform="translate(32, 116)">
-    <!-- Tag 1 -->
-    <rect x="0" y="0" width="86" height="22" rx="4" fill="#21262D" stroke="#30363D" stroke-width="1" />
-    <text x="43" y="14" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#58A6FF">Playwright</text>
-
-    <!-- Tag 2 -->
-    <rect x="94" y="0" width="94" height="22" rx="4" fill="#21262D" stroke="#30363D" stroke-width="1" />
-    <text x="141" y="14" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#58A6FF">Appium 2.x</text>
-
-    <!-- Tag 3 -->
-    <rect x="196" y="0" width="102" height="22" rx="4" fill="#21262D" stroke="#30363D" stroke-width="1" />
-    <text x="247" y="14" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#58A6FF">TypeScript</text>
-
-    <!-- Tag 4 -->
-    <rect x="306" y="0" width="108" height="22" rx="4" fill="#21262D" stroke="#30363D" stroke-width="1" />
-    <text x="360" y="14" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#8B949E">k6 Performance</text>
-
-    <!-- Tag 5 -->
-    <rect x="422" y="0" width="108" height="22" rx="4" fill="#21262D" stroke="#30363D" stroke-width="1" />
-    <text x="476" y="14" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#8B949E">CI/CD Gates</text>
+    <g class="tag-b1">
+      <rect x="0" y="0" width="86" height="22" rx="4" fill="#21262D" stroke="#30363D" stroke-width="1" />
+      <text x="43" y="14" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#58A6FF">Playwright</text>
+    </g>
+    <g class="tag-b2">
+      <rect x="94" y="0" width="94" height="22" rx="4" fill="#21262D" stroke="#30363D" stroke-width="1" />
+      <text x="141" y="14" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#58A6FF">Appium 2.x</text>
+    </g>
+    <g class="tag-b3">
+      <rect x="196" y="0" width="102" height="22" rx="4" fill="#21262D" stroke="#30363D" stroke-width="1" />
+      <text x="247" y="14" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#58A6FF">TypeScript</text>
+    </g>
+    <g class="tag-b4">
+      <rect x="306" y="0" width="108" height="22" rx="4" fill="#21262D" stroke="#30363D" stroke-width="1" />
+      <text x="360" y="14" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#8B949E">k6 Performance</text>
+    </g>
+    <g class="tag-b5">
+      <rect x="422" y="0" width="108" height="22" rx="4" fill="#21262D" stroke="#30363D" stroke-width="1" />
+      <text x="476" y="14" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#8B949E">CI/CD Gates</text>
+    </g>
   </g>
 
-  <!-- Right Decorative Icon / Badge -->
-  <g transform="translate(800, 32)">
-    <circle cx="28" cy="28" r="24" fill="#21262D" stroke="#30363D" stroke-width="1" />
-    <!-- Checkmark Shield / Quality Icon -->
-    <path d="M28 14 L39 19 V28 C39 35 34 40 28 43 C22 40 17 35 17 28 V19 Z" fill="none" stroke="#58A6FF" stroke-width="1.8" stroke-linejoin="round" />
-    <path d="M23 28 L27 32 L34 24" fill="none" stroke="#58A6FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- 3D Isometric Floating Quality Cube & Orbital Ring -->
+  <g class="orbit-ring">
+    <ellipse cx="805" cy="75" rx="48" ry="18" fill="none" stroke="#30363D" stroke-width="1" stroke-dasharray="4 4" transform="rotate(-25 805 75)" />
+    <circle cx="848" cy="68" r="3" fill="#58A6FF" />
+  </g>
+
+  <g class="float-cube" transform="translate(775, 45)">
+    <!-- 3D Isometric Cube (Top Face) -->
+    <path d="M30 6 L55 20 L30 34 L5 20 Z" fill="url(#cubeTop)" stroke="#58A6FF" stroke-width="0.8" />
+    <!-- Left Face -->
+    <path d="M5 20 L30 34 L30 62 L5 48 Z" fill="url(#cubeLeft)" stroke="#30363D" stroke-width="0.8" />
+    <!-- Right Face -->
+    <path d="M30 34 L55 20 L55 48 L30 62 Z" fill="url(#cubeRight)" stroke="#30363D" stroke-width="0.8" />
+    <!-- Internal Quality Core Icon -->
+    <path d="M25 24 L29 28 L36 20" fill="none" stroke="#F0F6FC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
   </g>
 </svg>

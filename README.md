@@ -1,6 +1,6 @@
 <div align="center">
 
-<!-- Minimalist Engineering Banner -->
+<!-- Minimalist Engineering Banner with 3D Rotating Cube & Shimmer Beam -->
 [![Hoang Phan Banner](./assets/banner.svg)](https://github.com/hoangphan636)
 
 <br/>
@@ -102,6 +102,17 @@ interface StaffQualityArchitect {
 
 ---
 
+### ⚡ 3D Automated Test Architecture &amp; Execution Pipeline
+*Interactive visualization of multi-shard execution, MCP agent routing, and deterministic quality gates.*
+
+<div align="center">
+
+[![3D Automated Test Pipeline](./assets/pipeline-3d.svg)](https://github.com/hoangphan636)
+
+</div>
+
+---
+
 ### 📦 Featured Engineering Repositories
 *Core open-source architectures, test automation frameworks, and MCP tooling.*
 
@@ -172,6 +183,27 @@ interface StaffQualityArchitect {
 <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=github_dark" alt="Dev Quote" width="98%" />
 
 </div>
+
+---
+
+### 💎 10 3D &amp; Animation Architectural Systems
+
+<details>
+<summary><b>Click to inspect 3D &amp; Animation Engineering Specifications</b></summary>
+<br/>
+
+1. **3D Floating Isometric Quality Cube**: Rotating wireframe cube in hero banner with orthographic perspective depth.
+2. **Dynamic Orbital Particle Ring**: Continuous orbital path tracing around the quality core at 60fps.
+3. **Linear-Style Border Shimmer**: Micro-animation light beam sweeping across top card borders with subtle specular reflection.
+4. **Live Radar Pulse Tickers**: Concentric breathing rings marking real-time active components and languages.
+5. **Multi-Stage 3D Sharded Execution Pipeline**: Isometric flow showing parallel test shards executing simultaneously.
+6. **Animated Data Flow Stream**: SVG stroke-dashoffset streams transferring execution packets across stages.
+7. **MCP Agent Node Constellation**: Interconnected orbital node network symbolizing Model Context Protocol routing.
+8. **Staggered Card Floating Physics**: Smooth vertical micro-animations creating organic elevation across components.
+9. **Zero-Flicker CSS Keyframes**: Fully hardware-accelerated animations running natively inside lightweight SVG vectors.
+10. **3D Rendered Engineering Lab Artwork**: High-definition side-by-side terminal + 3D workstation visual with subtle border styling.
+
+</details>
 
 ---
 
