@@ -1,38 +1,47 @@
 <div align="center">
 
-<!-- Minimalist Engineering Banner with 3D Rotating Cube & Shimmer Beam -->
+<!-- Engineering Excellence Header Banner -->
 [![Hoang Phan Banner](./assets/banner.svg)](https://github.com/hoangphan636)
 
 <br/>
 
-<!-- Clean Typing Tagline -->
+<!-- Restrained Typing Tagline -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=16&duration=2600&pause=1000&color=58A6FF&center=true&vCenter=true&width=780&lines=Senior+QA+Automation+Engineer+%26+Principal+Quality+Architect;Playwright+%2B+TypeScript+Enterprise+Test+Frameworks;Mobile+Automation+Architecture+with+Appium+2.x;High-Concurrency+Performance+Engineering+(k6);Deterministic+CI%2FCD+Quality+Gates+%26+Matrix+Sharding)](https://git.io/typing-svg)
+
+<p align="center">
+  <a href="https://linkedin.com/in/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  &nbsp;
+  <a href="https://github.com/hoangphan636"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
+  &nbsp;
+  <a href="mailto:hoangphannhat10@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+  &nbsp;
+  <a href="https://t.me/"><img src="https://img.shields.io/badge/Telegram-24A1DE?style=flat-square&logo=telegram&logoColor=white" alt="Telegram" /></a>
+</p>
 
 </div>
 
 ---
 
-### 👨‍💻 About Me
+### 🏛 Professional Overview
+
+Senior QA Automation Engineer and Principal Quality Architect specializing in enterprise test infrastructure, deterministic end-to-end automation, and AI-guided test systems. With a background spanning web, mobile, distributed backend services, and high-concurrency performance engineering, I focus on building resilient test architectures that shift verification left, minimize maintenance overhead, and guarantee zero-defect release velocity.
 
 <table>
   <tr>
     <td width="58%" valign="top">
 
 ```typescript
-interface StaffQualityArchitect {
+interface QualityArchitectProfile {
   name: "Hoang Phan";
   role: "Senior QA Automation Engineer • Principal Test Architect";
   location: "Ho Chi Minh City, Vietnam 🇻🇳";
-  specialties: [
-    "Enterprise E2E Test Automation (Playwright, Appium)",
-    "High-Concurrency Performance Engineering (k6, JMeter)",
-    "AI-Assisted Test Automation & Self-Healing Locators",
-    "Deterministic CI/CD Pipelines & Quality Gates"
+  coreDisciplines: [
+    "Enterprise E2E Web & Mobile Test Architecture",
+    "High-Concurrency Performance & SLA Benchmarking",
+    "AI-Augmented Self-Healing Locator Systems",
+    "Deterministic CI/CD Matrix Quality Gates"
   ];
-  currentFocus: [
-    "Model Context Protocol (MCP) Test Servers",
-    "Cross-Platform Native & Mobile Test Infrastructure"
-  ];
+  methodology: "Shift-Left • Contract-Driven • Zero-Flakiness";
   availability: "Available for Senior / Lead / Principal QA roles";
 }
 ```
@@ -51,70 +60,8 @@ interface StaffQualityArchitect {
 
 ---
 
-### 🌐 Connect With Me
-
-<p align="center">
-  <a href="https://linkedin.com/in/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
-  &nbsp;
-  <a href="https://github.com/hoangphan636"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" /></a>
-  &nbsp;
-  <a href="mailto:hoangphannhat10@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" /></a>
-  &nbsp;
-  <a href="https://t.me/"><img src="https://img.shields.io/badge/Telegram-24A1DE?style=flat-square&logo=telegram&logoColor=white" /></a>
-</p>
-
----
-
-### 🛠 Technical Competencies
-
-<table>
-  <tr>
-    <td width="24%"><b>E2E &amp; Mobile QA</b></td>
-    <td>Playwright • Appium 2.x • Cypress • Selenium • UIAutomator2 • XCUITest</td>
-  </tr>
-  <tr>
-    <td width="24%"><b>Languages &amp; Runtimes</b></td>
-    <td>TypeScript • JavaScript (Node.js) • Java (JUnit 5, TestNG) • Python</td>
-  </tr>
-  <tr>
-    <td width="24%"><b>BDD &amp; API Testing</b></td>
-    <td>Cucumber (Gherkin) • REST Assured • Postman • OpenAPI / Swagger</td>
-  </tr>
-  <tr>
-    <td width="24%"><b>Performance &amp; Observability</b></td>
-    <td>k6 Load Testing • Artillery • Apache JMeter • Grafana • InfluxDB</td>
-  </tr>
-  <tr>
-    <td width="24%"><b>CI/CD &amp; Infrastructure</b></td>
-    <td>GitHub Actions • GitLab CI • Azure DevOps • Docker • Linux (Bash)</td>
-  </tr>
-  <tr>
-    <td width="24%"><b>AI &amp; Web3 Quality</b></td>
-    <td>Autonomous QA Agents • Self-Healing Locators • Hardhat • Ethers.js</td>
-  </tr>
-</table>
-
-<br/>
-
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=ts,js,java,py,playwright,docker,githubactions,gitlab,postman,grafana,linux,git,vscode&theme=dark" alt="Tech Stack Icons" />
-</div>
-
----
-
-### ⚡ 3D Automated Test Architecture &amp; Execution Pipeline
-*Interactive visualization of multi-shard execution, MCP agent routing, and deterministic quality gates.*
-
-<div align="center">
-
-[![3D Automated Test Pipeline](./assets/pipeline-3d.svg)](https://github.com/hoangphan636)
-
-</div>
-
----
-
-### 📦 Featured Engineering Repositories
-*Core open-source architectures, test automation frameworks, and MCP tooling.*
+### 📦 Featured Engineering Projects
+*Curated flagship architectures solving critical challenges in test automation, selector stability, and cross-platform verification.*
 
 <table>
   <tr>
@@ -136,80 +83,123 @@ interface StaffQualityArchitect {
   </tr>
 </table>
 
----
+#### 1. [playwright-agent-mcp](https://github.com/hoangphan636/playwright-agent-mcp) — Model Context Protocol Test Automation Server
+- **Problem**: Modern single-page web applications suffer from frequent DOM restructuring and dynamic client-side hydration, causing high locator fragility, false-positive test failures, and continuous selector maintenance in automated E2E suites.
+- **Technical Approach**: Built an autonomous server implementing the open Model Context Protocol (MCP) standard to interface LLM reasoning engines with Playwright browser instances. Implements real-time accessibility-tree traversal, dynamic selector resolution, and heuristic locator self-healing algorithms during live test execution.
+- **Primary Technologies**: `TypeScript`, `Playwright`, `Model Context Protocol (MCP)`, `Chrome DevTools Protocol (CDP)`, `Node.js`
+- **Verified Outcome**: Enables agentic browser automation workflows to dynamically interact with complex web applications without brittle static XPath or CSS selector dependencies.
 
-### 🔄 Recently Updated Repositories
-*Latest active commits, codebases, and tool integrations.*
+#### 2. [Extension-QA](https://github.com/hoangphan636/Extension-QA) — DevTools Selector Generation & Validation Extension
+- **Problem**: Test engineers spend significant manual time inspecting deeply nested DOM elements, formulating unique test locators, and checking their resilience against dynamic attribute changes across release cycles.
+- **Technical Approach**: Developed a lightweight Chrome DevTools extension (Manifest v3) that evaluates active DOM hierarchies in real time. Generates deterministic, accessible locators prioritized by ARIA roles, `data-testid` semantics, and text constraints, followed by instant syntax evaluation against active Playwright and Cypress engines.
+- **Primary Technologies**: `TypeScript`, `JavaScript`, `Chrome Extension API (Manifest v3)`, `DevTools Protocol`
+- **Verified Outcome**: Accelerates test authoring cycles by generating deterministic, test-ready locator hierarchies directly in the developer's active browser context.
 
-<table>
-  <tr>
-    <td width="33.3%" valign="top">
-      <a href="https://github.com/hoangphan636/Rule-Agent">
-        <img src="./assets/card-rule-agent.svg" alt="Rule-Agent" width="100%" />
-      </a>
-    </td>
-    <td width="33.3%" valign="top">
-      <a href="https://github.com/hoangphan636/playwright-agent-mcp">
-        <img src="./assets/card-playwright-mcp.svg" alt="playwright-agent-mcp" width="100%" />
-      </a>
-    </td>
-    <td width="33.3%" valign="top">
-      <a href="https://github.com/hoangphan636/Format-CV">
-        <img src="./assets/card-format-cv.svg" alt="Format-CV" width="100%" />
-      </a>
-    </td>
-  </tr>
-</table>
+#### 3. [Mobile-mcp](https://github.com/hoangphan636/Mobile-mcp) — Cross-Platform Mobile Test Protocol Controller
+- **Problem**: Running mobile test suites across fragmented device ecosystems (Android and iOS) requires maintaining disjointed driver configs, manual session handshakes, and platform-specific gesture bindings.
+- **Technical Approach**: Engineered a centralized protocol gateway connecting Appium 2.x drivers (`UIAutomator2` for Android, `XCUITest` for iOS) with standardized MCP endpoints. Provides normalized touch gesture abstraction, device state management, and accessibility tree parsing across both mobile operating systems.
+- **Primary Technologies**: `TypeScript`, `Appium 2.x`, `UIAutomator2`, `XCUITest`, `Node.js`
+- **Verified Outcome**: Standardizes mobile automation commands into a single protocol interface, eliminating redundant platform-specific wrapper code.
 
 ---
 
-### 📈 GitHub Analytics
+### 🛠 Technical Expertise
+
+| Domain | Core Technologies & Frameworks | Architectural Standards & Practices |
+|---|---|---|
+| **Web Automation** | Playwright, Cypress, Selenium WebDriver | Page Object Model (POM), Screenplay Pattern, Shadow DOM & Iframe Handling, Self-Healing Locators |
+| **Mobile Automation** | Appium 2.x, UIAutomator2 (Android), XCUITest (iOS) | Real Device & Cloud Device Grid Execution, Native Gesture Automation, Deep Link Testing |
+| **API & Integration Testing** | REST Assured, Postman, Supertest, OpenAPI / Swagger | Contract Testing, Schema Validation, BDD with Cucumber / Gherkin, Idempotency Verification |
+| **Performance Engineering** | k6, Apache JMeter, Artillery | Concurrency Bounds, Spike & Endurance Testing, p95/p99 Latency SLA Validation, InfluxDB & Grafana |
+| **AI Testing & Architecture** | Model Context Protocol (MCP), LLM Agent Tooling | Automated Selector Healing, Semantic Assertion Validation, Visual Regression, Agentic Test Discovery |
+| **CI/CD & Test Reporting** | GitHub Actions, GitLab CI, Azure Pipelines, Docker | Parallel Matrix Sharding, Flakiness Quarantine Gates, Deterministic PR Verification, Allure Tracing |
+
+<br/>
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=ts,js,java,py,playwright,docker,githubactions,gitlab,postman,grafana,linux,git,vscode&theme=dark" alt="Technical Stack Icons" />
+</div>
+
+---
+
+### 📐 Engineering Architecture
+
+```mermaid
+flowchart LR
+    subgraph Plan["1. Test Planning & Spec"]
+        direction TB
+        REQ["Requirements & User Flows"]
+        BDD["Cucumber / Gherkin Specs"]
+        RULE["Rule-Agent Contract Assertions"]
+    end
+
+    subgraph Gen["2. Discovery & Generation"]
+        direction TB
+        EXT["Extension-QA (DOM Inspector)"]
+        LOC["Deterministic Accessible Selectors"]
+    end
+
+    subgraph Exec["3. Parallel Test Execution"]
+        direction TB
+        PW["Playwright (Web E2E Matrix)"]
+        APM["Appium 2.x (Mobile iOS / Android)"]
+        API["REST Assured (API Integration)"]
+        K6["k6 (Load & Concurrency Bounds)"]
+        MCP["playwright-agent-mcp (Self-Healing)"]
+    end
+
+    subgraph Report["4. Reporting & Triage"]
+        direction TB
+        ALLURE["Allure Reports & Artifacts"]
+        TRACE["Playwright Traces & Network Dumps"]
+        METRICS["Grafana SLA & Flakiness Triage"]
+    end
+
+    subgraph Gate["5. CI/CD Quality Gate"]
+        direction TB
+        GHA["GitHub Actions Matrix Runners"]
+        VERDICT{"Pass Threshold Met?"}
+        DEPLOY["Release / Deployment Ready"]
+        BLOCK["Quarantine / Block PR"]
+    end
+
+    Plan --> Gen
+    Gen --> Exec
+    Exec --> Report
+    Report --> Gate
+    VERDICT -- Yes --> DEPLOY
+    VERDICT -- No --> BLOCK
+```
 
 <div align="center">
 
-<!-- Streak Stats -->
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=hoangphan636&theme=dark&background=161b22&border=30363d&stroke=30363d&ring=58a6ff&fire=58a6ff&currStreakNum=f0f6fc&sideNums=8b949e&sideLabels=8b949e&dates=8b949e" alt="GitHub Streak" width="98%" />
-
-<br/><br/>
-
-<!-- Stats & Top Languages -->
-<img src="https://github-readme-stats.vercel.app/api?username=hoangphan636&show_icons=true&bg_color=161b22&border_color=30363d&title_color=58a6ff&text_color=8b949e&icon_color=58a6ff" alt="GitHub Stats" width="48%" />
-&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hoangphan636&layout=compact&bg_color=161b22&border_color=30363d&title_color=58a6ff&text_color=8b949e" alt="Top Languages" width="48%" />
-
-<br/><br/>
-
-<!-- Dev Quote -->
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=github_dark" alt="Dev Quote" width="98%" />
+[![3D Automated Test Pipeline](./assets/pipeline-3d.svg)](https://github.com/hoangphan636)
 
 </div>
 
 ---
 
-### 💎 10 3D &amp; Animation Architectural Systems
+### 💡 Engineering Philosophy
 
-<details>
-<summary><b>Click to inspect 3D &amp; Animation Engineering Specifications</b></summary>
-<br/>
-
-1. **3D Floating Isometric Quality Cube**: Rotating wireframe cube in hero banner with orthographic perspective depth.
-2. **Dynamic Orbital Particle Ring**: Continuous orbital path tracing around the quality core at 60fps.
-3. **Linear-Style Border Shimmer**: Micro-animation light beam sweeping across top card borders with subtle specular reflection.
-4. **Live Radar Pulse Tickers**: Concentric breathing rings marking real-time active components and languages.
-5. **Multi-Stage 3D Sharded Execution Pipeline**: Isometric flow showing parallel test shards executing simultaneously.
-6. **Animated Data Flow Stream**: SVG stroke-dashoffset streams transferring execution packets across stages.
-7. **MCP Agent Node Constellation**: Interconnected orbital node network symbolizing Model Context Protocol routing.
-8. **Staggered Card Floating Physics**: Smooth vertical micro-animations creating organic elevation across components.
-9. **Zero-Flicker CSS Keyframes**: Fully hardware-accelerated animations running natively inside lightweight SVG vectors.
-10. **3D Rendered Engineering Lab Artwork**: High-definition side-by-side terminal + 3D workstation visual with subtle border styling.
-
-</details>
+1. **Deterministic Over Flaky**: A flaky test provides negative value by eroding trust in the pipeline. Every test must execute idempotently, control its own test data fixtures, and eliminate arbitrary `sleep()` statements in favor of explicit state and locator assertions.
+2. **Shift-Left Quality Architecture**: Quality is an architectural discipline embedded throughout design and implementation, not a downstream filter. Validating contracts, schemas, and BDD specifications prior to merge prevents defects before they reach production.
+3. **Performance as a Core Functional Requirement**: A system that is correct but exceeds latency tolerances is a failed system. Every critical transaction flow must have verified p95 and p99 latency thresholds under defined peak concurrency.
+4. **Resilient Test Infrastructure**: Test suites must outlive routine UI refactorings. Leveraging accessible semantic selectors (`data-testid`, ARIA roles) and AI-guided locator self-healing ensures high test suite longevity and low maintenance overhead.
 
 ---
 
-### ⚙️ Repository Synchronization Utility
+### 📊 GitHub Activity
 
-```powershell
-# Query repository state & verify recent updates via GitHub CLI
-.\scripts\update_repos.ps1
-```
+<details>
+<summary><b>Inspect Verified GitHub Profile Overview</b></summary>
+<br/>
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=hoangphan636&show_icons=true&hide_rank=true&hide=issues&bg_color=161b22&border_color=30363d&title_color=58a6ff&text_color=8b949e&icon_color=58a6ff" alt="Verified GitHub Profile Stats" />
+
+<p><i>Note: The majority of active enterprise frameworks, client automation suites, and proprietary testbeds reside in private organizational repositories.</i></p>
+
+</div>
+
+</details>

@@ -30,13 +30,9 @@
       0% { stroke-dashoffset: 40; }
       100% { stroke-dashoffset: 0; }
     }
-    @keyframes pulseGlow {
-      0%, 100% { opacity: 0.4; transform: scale(1); }
-      50% { opacity: 1; transform: scale(1.08); }
-    }
     @keyframes nodeFloat {
       0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-4px); }
+      50% { transform: translateY(-3.5px); }
     }
     @keyframes ringSpin {
       0% { transform: rotate(0deg); }
@@ -54,7 +50,7 @@
     .float-item3 { animation: nodeFloat 4s ease-in-out 1.6s infinite; }
     .float-item4 { animation: nodeFloat 4s ease-in-out 2.4s infinite; }
     .pulse-dot { animation: radarBeam 1.8s cubic-bezier(0, 0.2, 0.8, 1) infinite; }
-    .mcp-ring { animation: ringSpin 14s linear infinite; transform-origin: 660px 145px; }
+    .ring-spin { animation: ringSpin 14s linear infinite; }
   </style>
 
   <!-- Container Surface -->
@@ -62,7 +58,6 @@
 
   <!-- Section Header -->
   <g transform="translate(24, 28)">
-    <!-- 3D Layers Icon -->
     <path d="M1 5 L9 1 L17 5 L9 9 Z" fill="none" stroke="#58A6FF" stroke-width="1.5" stroke-linejoin="round" />
     <path d="M1 9 L9 13 L17 9" fill="none" stroke="#58A6FF" stroke-width="1.5" stroke-linejoin="round" />
     <path d="M1 13 L9 17 L17 13" fill="none" stroke="#58A6FF" stroke-width="1.5" stroke-linejoin="round" />
@@ -92,72 +87,89 @@
   <path d="M720 145 L766 145" fill="none" stroke="url(#lineGrad)" stroke-width="2" class="flow-path" />
 
   <!-- Stage 1: Trigger & Code Node -->
-  <g class="float-item1" transform="translate(24, 105)">
-    <rect width="144" height="80" rx="6" ry="6" fill="url(#nodeGrad)" stroke="#30363D" stroke-width="1" />
-    <circle cx="16" cy="18" r="3.5" fill="#58A6FF" />
-    <text x="26" y="21.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#F0F6FC">Event Trigger</text>
-    <text x="16" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#8B949E">Rule-Agent &amp; CI push</text>
-    <text x="16" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#58A6FF">SHA Matrix Dispatch</text>
+  <g transform="translate(24, 105)">
+    <g class="float-item1">
+      <rect width="144" height="80" rx="6" ry="6" fill="url(#nodeGrad)" stroke="#30363D" stroke-width="1" />
+      <circle cx="16" cy="18" r="3.5" fill="#58A6FF" />
+      <text x="26" y="21.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#F0F6FC">Event Trigger</text>
+      <text x="16" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#8B949E">Rule-Agent &amp; CI push</text>
+      <text x="16" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" fill="#58A6FF">SHA Matrix Dispatch</text>
+    </g>
   </g>
 
   <!-- Stage 2: 3D Parallel Test Shards Matrix -->
   <!-- Shard A: Playwright Web -->
-  <g class="float-item2" transform="translate(242, 68)">
-    <rect width="218" height="34" rx="5" ry="5" fill="#0D1117" stroke="#30363D" stroke-width="1" />
-    <circle cx="14" cy="17" r="3" fill="#3FB950" />
-    <circle cx="14" cy="17" r="3" fill="none" stroke="#3FB950" stroke-width="1" class="pulse-dot" />
-    <text x="26" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">Playwright Web E2E (4x Shards)</text>
-    <text x="202" y="21" text-anchor="end" font-family="SF Mono, Consolas, monospace" font-size="10" fill="#3FB950">PASS</text>
+  <g transform="translate(242, 68)">
+    <g class="float-item2">
+      <rect width="218" height="34" rx="5" ry="5" fill="#0D1117" stroke="#30363D" stroke-width="1" />
+      <circle cx="14" cy="17" r="3" fill="#3FB950" />
+      <circle cx="14" cy="17" r="3" fill="none" stroke="#3FB950" stroke-width="1" class="pulse-dot" />
+      <text x="26" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">Playwright Web E2E (4x Shards)</text>
+      <text x="202" y="21" text-anchor="end" font-family="SF Mono, Consolas, monospace" font-size="10" fill="#3FB950">PASS</text>
+    </g>
   </g>
 
   <!-- Shard B: Appium Mobile -->
-  <g class="float-item1" transform="translate(242, 108)">
-    <rect width="218" height="34" rx="5" ry="5" fill="#0D1117" stroke="#30363D" stroke-width="1" />
-    <circle cx="14" cy="17" r="3" fill="#3FB950" />
-    <circle cx="14" cy="17" r="3" fill="none" stroke="#3FB950" stroke-width="1" class="pulse-dot" />
-    <text x="26" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">Appium 2.x Mobile (iOS &amp; Android)</text>
-    <text x="202" y="21" text-anchor="end" font-family="SF Mono, Consolas, monospace" font-size="10" fill="#3FB950">PASS</text>
+  <g transform="translate(242, 108)">
+    <g class="float-item1">
+      <rect width="218" height="34" rx="5" ry="5" fill="#0D1117" stroke="#30363D" stroke-width="1" />
+      <circle cx="14" cy="17" r="3" fill="#3FB950" />
+      <circle cx="14" cy="17" r="3" fill="none" stroke="#3FB950" stroke-width="1" class="pulse-dot" />
+      <text x="26" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">Appium 2.x Mobile (iOS &amp; Android)</text>
+      <text x="202" y="21" text-anchor="end" font-family="SF Mono, Consolas, monospace" font-size="10" fill="#3FB950">PASS</text>
+    </g>
   </g>
 
   <!-- Shard C: BDD & API -->
-  <g class="float-item3" transform="translate(242, 148)">
-    <rect width="218" height="34" rx="5" ry="5" fill="#0D1117" stroke="#30363D" stroke-width="1" />
-    <circle cx="14" cy="17" r="3" fill="#3FB950" />
-    <circle cx="14" cy="17" r="3" fill="none" stroke="#3FB950" stroke-width="1" class="pulse-dot" />
-    <text x="26" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">Cucumber BDD &amp; REST Assured</text>
-    <text x="202" y="21" text-anchor="end" font-family="SF Mono, Consolas, monospace" font-size="10" fill="#3FB950">PASS</text>
+  <g transform="translate(242, 148)">
+    <g class="float-item3">
+      <rect width="218" height="34" rx="5" ry="5" fill="#0D1117" stroke="#30363D" stroke-width="1" />
+      <circle cx="14" cy="17" r="3" fill="#3FB950" />
+      <circle cx="14" cy="17" r="3" fill="none" stroke="#3FB950" stroke-width="1" class="pulse-dot" />
+      <text x="26" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">Cucumber BDD &amp; REST Assured</text>
+      <text x="202" y="21" text-anchor="end" font-family="SF Mono, Consolas, monospace" font-size="10" fill="#3FB950">PASS</text>
+    </g>
   </g>
 
   <!-- Shard D: k6 Performance -->
-  <g class="float-item4" transform="translate(242, 188)">
-    <rect width="218" height="34" rx="5" ry="5" fill="#0D1117" stroke="#30363D" stroke-width="1" />
-    <circle cx="14" cy="17" r="3" fill="#3FB950" />
-    <circle cx="14" cy="17" r="3" fill="none" stroke="#3FB950" stroke-width="1" class="pulse-dot" />
-    <text x="26" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">k6 Load &amp; Concurrency Bounds</text>
-    <text x="202" y="21" text-anchor="end" font-family="SF Mono, Consolas, monospace" font-size="10" fill="#3FB950">PASS</text>
+  <g transform="translate(242, 188)">
+    <g class="float-item4">
+      <rect width="218" height="34" rx="5" ry="5" fill="#0D1117" stroke="#30363D" stroke-width="1" />
+      <circle cx="14" cy="17" r="3" fill="#3FB950" />
+      <circle cx="14" cy="17" r="3" fill="none" stroke="#3FB950" stroke-width="1" class="pulse-dot" />
+      <text x="26" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">k6 Load &amp; Concurrency Bounds</text>
+      <text x="202" y="21" text-anchor="end" font-family="SF Mono, Consolas, monospace" font-size="10" fill="#3FB950">PASS</text>
+    </g>
   </g>
 
-  <!-- Stage 3: MCP Agent Brain (3D Constellation) -->
-  <g class="mcp-ring">
-    <circle cx="660" cy="145" r="42" fill="none" stroke="#30363D" stroke-width="1" stroke-dasharray="3 3" />
-    <circle cx="698" cy="130" r="3" fill="#58A6FF" />
-    <circle cx="622" cy="160" r="2.5" fill="#3FB950" />
+  <!-- Stage 3: MCP Agent Brain (Center at 650, 145) -->
+  <g transform="translate(650, 145)">
+    <!-- Rotating Ring centered at 0, 0 -->
+    <g class="ring-spin">
+      <circle cx="0" cy="0" r="42" fill="none" stroke="#30363D" stroke-width="1" stroke-dasharray="3 3" />
+      <circle cx="38" cy="-15" r="3" fill="#58A6FF" />
+      <circle cx="-38" cy="15" r="2.5" fill="#3FB950" />
+    </g>
   </g>
 
-  <g class="float-item2" transform="translate(580, 105)">
-    <rect width="160" height="80" rx="8" ry="8" fill="url(#mcpGrad)" stroke="#58A6FF" stroke-width="1.2" />
-    <path d="M80 18 L100 28 L100 48 L80 58 L60 48 L60 28 Z" fill="none" stroke="#58A6FF" stroke-width="1" />
-    <circle cx="80" cy="38" r="4" fill="#58A6FF" />
-    <text x="80" y="55" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#F0F6FC">MCP QA Agent</text>
-    <text x="80" y="70" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#8B949E">Self-Healing Locators</text>
+  <g transform="translate(570, 105)">
+    <g class="float-item2">
+      <rect width="160" height="80" rx="8" ry="8" fill="url(#mcpGrad)" stroke="#58A6FF" stroke-width="1.2" />
+      <path d="M80 18 L100 28 L100 48 L80 58 L60 48 L60 28 Z" fill="none" stroke="#58A6FF" stroke-width="1" />
+      <circle cx="80" cy="38" r="4" fill="#58A6FF" />
+      <text x="80" y="55" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#F0F6FC">MCP QA Agent</text>
+      <text x="80" y="70" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#8B949E">Self-Healing Locators</text>
+    </g>
   </g>
 
   <!-- Stage 4: Quality Gate Shield & Verdict -->
-  <g class="float-item1" transform="translate(766, 105)">
-    <rect width="144" height="80" rx="6" ry="6" fill="#0D1117" stroke="#30363D" stroke-width="1" />
-    <!-- Checkmark Shield Icon -->
-    <path d="M72 16 L88 22 V34 C88 43 81 49 72 52 C63 49 56 43 56 34 V22 Z" fill="none" stroke="#3FB950" stroke-width="1.8" stroke-linejoin="round" />
-    <path d="M66 34 L70 38 L78 28" fill="none" stroke="#3FB950" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-    <text x="72" y="65" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#3FB950">GATE: APPROVED</text>
+  <g transform="translate(766, 105)">
+    <g class="float-item1">
+      <rect width="144" height="80" rx="6" ry="6" fill="#0D1117" stroke="#30363D" stroke-width="1" />
+      <!-- Checkmark Shield Icon -->
+      <path d="M72 16 L88 22 V34 C88 43 81 49 72 52 C63 49 56 43 56 34 V22 Z" fill="none" stroke="#3FB950" stroke-width="1.8" stroke-linejoin="round" />
+      <path d="M66 34 L70 38 L78 28" fill="none" stroke="#3FB950" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="72" y="65" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#3FB950">GATE: APPROVED</text>
+    </g>
   </g>
 </svg>
