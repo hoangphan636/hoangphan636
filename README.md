@@ -1,139 +1,148 @@
 <div align="center">
 
-# Senior Quality Engineering & Test Automation Architect
-
-**Playwright & TypeScript • Appium • Performance Engineering • CI/CD Quality Gates • Web3 QA**
-
-```
-Architecting resilient, deterministic test ecosystems and shifting quality into the continuous delivery pipeline.
-```
-
-[![Playwright](https://img.shields.io/badge/Playwright-TypeScript-2E7D32?style=flat-square&logo=playwright&logoColor=white)](https://playwright.dev/)
-[![Appium](https://img.shields.io/badge/Appium-Mobile_QA-662D91?style=flat-square&logo=appium&logoColor=white)](https://appium.io/)
-[![CI/CD](https://img.shields.io/badge/CI%2FCD-Actions%20|%20GitLab%20|%20Azure-1f6feb?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/features/actions)
-[![Performance](https://img.shields.io/badge/Performance-k6%20|%20Artillery-7D4EFA?style=flat-square&logo=k6&logoColor=white)](https://k6.io/)
-[![Web3 QA](https://img.shields.io/badge/Web3-Smart_Contract_QA-0969da?style=flat-square&logo=ethereum&logoColor=white)](#quality-engineering--automation-expertise)
-
-[Engineering Philosophy](#engineering-philosophy) • [Technical Skills](#technical-skills) • [Quality Expertise](#quality-engineering--automation-expertise) • [Featured Projects](#featured-projects) • [GitHub Metrics](#github-activity--metrics) • [Contact](#connect--professional-inquiries)
-
-</div>
-
----
-
-<a id="engineering-philosophy"></a>
-## 🧭 Engineering Philosophy
-
-> [!NOTE]
-> **Core Quality Principle**: Quality is not an inspection phase that occurs after code freeze—it is an architectural discipline embedded throughout design, development, and deployment.
-
-- **Determinism over Coverage**: Zero tolerance for flaky tests. A lean suite of 100 deterministic, fast tests provides far greater release confidence than 1,000 brittle, slow tests.
-- **Shift-Left by Default**: Quality gates begin at the local developer loop and commit hook, accelerating feedback from hours to minutes.
-- **Fail-Fast Parallel Architecture**: Test suites designed for isolated execution, ephemeral environments, and dynamic matrix sharding in modern CI/CD pipelines.
-- **Intelligent Engineering**: Augmenting test creation, locator maintenance, and visual verification with AI workflows while maintaining deterministic assertions.
-
----
-
-<a id="technical-skills"></a>
-## 🛠 Technical Skills
-
-| Domain | Technologies & Tooling | Focus Areas |
-| :--- | :--- | :--- |
-| **E2E & Web Automation** | **Playwright**, TypeScript, JavaScript, Cypress, Selenium WebDriver | Page Object Model (POM), custom fixtures, API-driven authentication, network mocking, parallel worker sharding |
-| **Mobile Test Automation** | **Appium 2.x**, TypeScript, UIAutomator2, XCUITest | Cross-platform iOS/Android architectures, gesture automation, cloud device farm execution (BrowserStack / SauceLabs) |
-| **Backend & Enterprise QA** | **Java**, **JUnit 5**, TestNG, **Cucumber BDD**, Gherkin | Living documentation, behavior-driven specifications, contract testing, enterprise test harnesses |
-| **API & Integration Testing** | REST APIs, GraphQL, Postman/Newman, Supertest, Pact, Testcontainers | Schema contract validation, auth state lifecycle, idempotency testing, mock services |
-| **Performance Engineering** | **k6**, **Artillery**, Apache JMeter | Load profiling, stress/spike testing, threshold-based SLA/SLO gates in pipelines, bottleneck isolation |
-| **CI/CD & DevOps Gates** | **GitHub Actions**, **GitLab CI**, **Azure DevOps Pipelines**, Docker | Multi-stage pipeline design, artifact preservation (traces, video, HAR), automated test quarantining, reporting |
-| **AI & Modern QA Ops** | AI-assisted test generation, dynamic locator self-healing, visual regression (Percy/Applitools) | Visual drift detection, synthetic data generation, test impact analysis, automated root-cause triaging |
-| **Web3 & Blockchain QA** | Hardhat, Foundry, ethers.js, RPC endpoint testing | Smart contract event verification, deterministic blockchain state mocking, gas consumption regression testing |
-
----
-
-<a id="quality-engineering--automation-expertise"></a>
-## ⚙️ Quality Engineering & Automation Expertise
-
-### 1. Robust Framework Architecture
-- **State Isolation & Storage Reuse**: Bypassing UI authentication flows via authenticated browser contexts and session injection, reducing end-to-end execution times by up to 60%.
-- **Zero-Sleep Synchronization**: Enforcing web-first assertions and actionability polling instead of arbitrary timeouts to eliminate race conditions.
-- **Actionable Artifacts**: Automated recording of Playwright traces, network HAR files, and contextual screenshots strictly on step failure for rapid debugging.
-
-### 2. High-Throughput CI/CD Pipelines
-- **Test Sharding & Parallelism**: Splitting execution across containerized CI workers to maintain PR test runtime within strict SLAs (< 10 minutes).
-- **Flakiness Quarantine Workflow**: Automatic isolation of unstable tests from release-blocking gates paired with telemetry-based triaging.
-- **Unified Quality Reporting**: Publishing rich HTML test reports, Allure dashboards, and Slack/Teams notification webhooks with root-cause summaries.
-
-### 3. Non-Functional & Resilience Testing
-- **Continuous Performance Gates**: Integrating k6 and Artillery scripts into staging releases with hard threshold gates on P95 latency and error rate.
-- **Service Virtualization & Contract Verification**: Decoupling integration dependencies using mock servers and Pact contract verification.
-
----
-
-<a id="featured-projects"></a>
-## 📦 Featured Projects
-
-> [!TIP]
-> Replace the repository links and placeholder descriptions below with your specific repositories or case studies.
-
-### [Enterprise Web & API Automation Framework](https://github.com/hoangphan636/ENTERPRISE_FRAMEWORK_PLACEHOLDER)
-- **Stack**: Playwright • TypeScript • GitHub Actions • Docker
-- **Summary**: Modular test automation architecture featuring custom test fixtures, multi-tenant state handling, and automated network stubbing.
-- **Key Metric**: `[PLACEHOLDER: e.g., Reduced regression suite execution time from 45m to 8m via 6-node CI sharding]`
-
----
-
-### [Cross-Platform Mobile Automation Harness](https://github.com/hoangphan636/MOBILE_FRAMEWORK_PLACEHOLDER)
-- **Stack**: Appium 2.x • TypeScript • JUnit • Real Device Cloud
-- **Summary**: Unified testing harness targeting native iOS and Android applications with page-object abstraction and automated deep-link navigation.
-- **Key Metric**: `[PLACEHOLDER: e.g., 99.2% test stability across 12 physical device configurations]`
-
----
-
-### [Distributed Performance & Stress Testing Suite](https://github.com/hoangphan636/PERFORMANCE_SUITE_PLACEHOLDER)
-- **Stack**: k6 • Artillery • InfluxDB • Grafana
-- **Summary**: Protocol-level load testing framework modeling realistic user flows, concurrent session ramp-ups, and automated pipeline regression gates.
-- **Key Metric**: `[PLACEHOLDER: e.g., Validated 10,000 peak concurrent users and surfaced critical database connection pool bottlenecks]`
-
----
-
-### [Web3 DApp & Smart Contract Validation Harness](https://github.com/hoangphan636/WEB3_QA_PLACEHOLDER)
-- **Stack**: Ethers.js • Hardhat • TypeScript • Playwright
-- **Summary**: End-to-end quality validation suite verifying wallet connectivity, RPC simulation, smart contract transaction events, and state mutations.
-- **Key Metric**: `[PLACEHOLDER: e.g., Automated verification of 25+ contract event workflows across local testnet nodes]`
-
----
-
-<a id="github-activity--metrics"></a>
-## 📊 GitHub Activity & Metrics
-
-<div align="center">
-
-<!-- GitHub Stats Card: Set to dark blue theme matching engineering aesthetic -->
-<img src="https://github-readme-stats.vercel.app/api?username=hoangphan636&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=1f6feb&text_color=c9d1d9" alt="GitHub Statistics" width="48%" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hoangphan636&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" alt="Top Languages" width="48%" />
+<!-- Top Banner -->
+[![Banner](./assets/banner.svg)](https://github.com/hoangphan636)
 
 <br/>
 
-<!-- Optional GitHub Streak Stats -->
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=hoangphan636&theme=tokyonight&hide_border=true&background=0d1117&ring=58a6ff&fire=1f6feb&currStreakNum=58a6ff" alt="GitHub Streak" width="96%" />
+<!-- Realtime Typing Tagline -->
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=17&duration=2400&pause=1000&color=00F2FE&center=true&vCenter=true&width=750&lines=Senior+QA+Automation+Engineer+%26+Principal+Quality+Architect;Playwright+%2B+TypeScript+Enterprise+Test+Frameworks;Cross-Platform+Mobile+Automation+with+Appium+2.x;High-Concurrency+Performance+Engineering+(k6+%2F+Artillery);Deterministic+CI%2FCD+Quality+Gates+%26+Matrix+Sharding;Smart+Contract+%26+Web3+Quality+Assurance)](https://git.io/typing-svg)
 
 </div>
-
-> [!NOTE]
-> *Metrics render dynamically via public GitHub API endpoints. If external SVG services are blocked or rate-limited by your network, review public repositories directly at [github.com/hoangphan636](https://github.com/hoangphan636).*
 
 ---
 
-<a id="connect--professional-inquiries"></a>
-## 📬 Connect & Professional Inquiries
+### 👨‍💻 About Me
+
+<table>
+  <tr>
+    <td width="60%" valign="top">
+
+```javascript
+const hoangPhan = {
+  role: "Senior QA Automation Engineer • Principal Test Architect",
+  location: "Ho Chi Minh City, Vietnam 🇻🇳",
+  building: [
+    "Autonomous Playwright & Appium Frameworks",
+    "Realtime 2s Scheduler Quality Telemetry",
+    "AI-Assisted Self-Healing Locator Engines",
+    "High-Concurrency Performance Gates with k6"
+  ],
+  stack: {
+    web_e2e: ["Playwright", "TypeScript", "Cypress", "Selenium"],
+    mobile: ["Appium 2.x", "UIAutomator2", "XCUITest"],
+    backend: ["Java", "JUnit 5", "Cucumber BDD", "TestNG"],
+    performance: ["k6", "Artillery", "Apache JMeter"],
+    devops: ["GitHub Actions", "GitLab CI", "Docker"],
+    web3: ["Hardhat", "Foundry", "Ethers.js"]
+  },
+  availability: "Open for Senior / Lead / Principal QA roles"
+};
+```
+
+> *"Program testing can be used to show the presence of bugs, but never to show their absence!"*  
+> — **Edsger W. Dijkstra**
+
+</td>
+<td width="40%" align="center" valign="middle">
+
+<img src="./assets/about-lofi.jpg" alt="Hoang Phan - 3D Cyber QA Workstation" width="100%" style="border-radius: 14px; box-shadow: 0 8px 25px rgba(0,242,254,0.25);" />
+
+</td>
+</tr>
+</table>
+
+---
+
+### 🌐 Connect With Me
+
+<p align="center">
+  <a href="https://linkedin.com/in/"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://github.com/hoangphan636"><img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="mailto:hoangphannhat10@gmail.com"><img src="https://img.shields.io/badge/GMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://t.me/"><img src="https://img.shields.io/badge/TELEGRAM-229ED9?style=for-the-badge&logo=telegram&logoColor=white" /></a>
+</p>
+
+---
+
+### 🛠 Tech Stack
 
 <div align="center">
 
-| Channel | Contact Point |
-| :--- | :--- |
-| **Email** | [`[PLACEHOLDER: hoangphannhat10@gmail.com]`](mailto:hoangphannhat10@gmail.com) |
-| **LinkedIn** | [`[PLACEHOLDER: linkedin.com/in/YOUR_PROFILE]`](https://linkedin.com/in/) |
-| **GitHub** | [`@hoangphan636`](https://github.com/hoangphan636) |
-| **Location / Timezone** | `[PLACEHOLDER: e.g., Ho Chi Minh City, Vietnam (UTC+7)]` |
-| **Availability** | `[PLACEHOLDER: Open to Senior / Lead / Principal QA Automation roles]` |
+<!-- Modern 3D Icons Grid -->
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=ts,js,java,py,playwright,docker,githubactions,gitlab,postman,grafana,linux,git,vscode&theme=dark" />
+</a>
+
+<br/><br/>
+
+<!-- Modern Colored Pill Badges -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Playwright-00f2fe?style=flat-square&logo=playwright&logoColor=black" />
+  <img src="https://img.shields.io/badge/Appium_2.x-662D91?style=flat-square&logo=appium&logoColor=white" />
+  <img src="https://img.shields.io/badge/JUnit_5-25A162?style=flat-square&logo=junit5&logoColor=white" />
+  <img src="https://img.shields.io/badge/Cucumber_BDD-23D96C?style=flat-square&logo=cucumber&logoColor=white" />
+  <img src="https://img.shields.io/badge/k6_Performance-7D4EFA?style=flat-square&logo=k6&logoColor=white" />
+  <img src="https://img.shields.io/badge/Artillery-ff0844?style=flat-square&logo=artillery&logoColor=white" />
+  <img src="https://img.shields.io/badge/Testcontainers-00f5a0?style=flat-square&logo=docker&logoColor=black" />
+  <img src="https://img.shields.io/badge/Hardhat_Web3-eab308?style=flat-square&logo=ethereum&logoColor=black" />
+  <img src="https://img.shields.io/badge/Ethers.js-38bdf8?style=flat-square&logo=ethereum&logoColor=black" />
+</p>
 
 </div>
+
+---
+
+### 🔥 LOẠI 1: TOP 3 REPO TRUY CẬP NHIỀU NHẤT
+> *Tần suất truy cập & hoạt động cao nhất • Tự động kích hoạt & chuyển đổi card mỗi 2 giây*
+
+<div align="center">
+
+[![Top Accessed Repos](./assets/top-accessed-repos.svg)](https://github.com/hoangphan636?tab=repositories)
+
+</div>
+
+---
+
+### ⚡ LOẠI 2: TOP 3 REPO MỚI NHẤT
+> *Codebase mới nhất & commits gần đây • Cập nhật thông số realtime chu kỳ 2 giây*
+
+<div align="center">
+
+[![Top Newest Repos](./assets/top-latest-repos.svg)](https://github.com/hoangphan636?tab=repositories)
+
+</div>
+
+---
+
+### 📊 GitHub Analytics
+
+<div align="center">
+
+<!-- Streak Stats with Circular Progress Ring -->
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=hoangphan636&theme=tokyonight&hide_border=true&background=080b11&ring=00f2fe&fire=ff0844&currStreakNum=00f5a0" alt="GitHub Streak" width="98%" />
+
+<br/>
+
+<!-- Stats & Top Languages -->
+<img src="https://github-readme-stats.vercel.app/api?username=hoangphan636&show_icons=true&theme=tokyonight&hide_border=true&bg_color=080b11&title_color=00f2fe&icon_color=ff0844&text_color=94a3b8" alt="GitHub Stats" width="48%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hoangphan636&layout=compact&theme=tokyonight&hide_border=true&bg_color=080b11&title_color=00f2fe&text_color=94a3b8" alt="Top Languages" width="48%" />
+
+<br/>
+
+<!-- Random Dev Quote -->
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev Quote" width="98%" />
+
+</div>
+
+---
+
+### ⏱ REALTIME 2-SECOND SCHEDULER DAEMON
+
+> [!NOTE]
+> **Cơ chế cập nhật 2 giây**:
+> - **Visual Animation (Frontend)**: Cả 2 thẻ SVG sử dụng CSS `@keyframes` với thanh tiến trình và radar quét chu kỳ **2.0s**. Mỗi card và thông số (P95 latency, Pass rate, Locators, Health) tự động highlight xoay tua mỗi 2 giây.
+> - **Live Data Sync (Local/Backend)**: Chạy script native PowerShell để thăm dò và đồng bộ dữ liệu GitHub API mỗi 2 giây:
+>   ```powershell
+>   .\scripts\update_repos.ps1 -LoopSeconds 2
+>   ```
